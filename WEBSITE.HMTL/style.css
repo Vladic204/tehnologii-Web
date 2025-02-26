@@ -3,25 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
+.contact-section {
+    flex: 1; /* Permite secțiunii .contact-section să ocupe tot spațiul disponibil */
+    /* ... restul stilurilor ... */
+}
 .main {
     width: 100%;
-    height: 100vh; /* Ajustat pentru a ocupa exact întreaga înălțime a ecranului */
-    background: linear-gradient(to top, rgba(247, 248, 251, 0.007) 50%, rgba(247, 251, 244, 0.153) 50%), 
-                url('car.jpg');
+    min-height: 1000vh; 
+    background: linear-gradient(to top, rgba(7, 237, 122, 0.833) 50%, rgba(21, 241, 9, 0.981) 50%), 
+                url('icar.jpg');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .navbar {
-    max-width: 1200px;
+    max-width: 1000px;
     width: 100%;
     height: 75px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between; /* Distribuie conținutul uniform */
-    padding: 0 20px;
+    padding: 0 200px;
 }
 
 .icon {
@@ -74,28 +90,61 @@ ul li {
     right: 20px;
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(239, 3, 3, 0.932);
     border-radius: 20px;
     padding: 5px 10px;
 }
 
-.search-box input {
-    border: none;
-    outline: none;
-    background: transparent;
-    color: white;
-    padding: 5px;
-    font-size: 16px;
-    width: 150px;
+/* Căsuța de căutare stilizată */
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
 
-.search-box button {
-    border: none;
-    background: transparent;
-    color: white;
-    cursor: pointer;
+.search-box input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #ccc;
+    border-radius: 25px 0 0 25px; /* Colțuri rotunjite doar pe partea stângă */
+    outline: none;
     font-size: 16px;
+    transition: 0.3s;
 }
+
+/* Efect la focus */
+.search-box input:focus {
+    border-color: #002df7;
+    box-shadow: 0 0 5px rgba(255, 30, 30, 0.5);
+}
+
+/* Buton de căutare stilizat */
+.search-box button {
+    padding: 10px 15px;
+    border: none;
+    background: linear-gradient(45deg, #1e2dff, #ff6600);
+    color: white;
+    font-size: 18px;
+    border-radius: 0 25px 25px 0; /* Colțuri rotunjite doar pe partea dreaptă */
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Efect hover */
+.search-box button:hover {
+    background: linear-gradient(45deg, #ff6600, #ff1e1e);
+    transform: scale(1.05);
+}
+
+/* Iconiță de căutare */
+.search-box button i {
+    font-size: 18px;
+}
+
 .categories {
     display: flex;
     justify-content: center;
@@ -105,13 +154,18 @@ ul li {
 
 .category {
     text-align: center;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(197, 191, 191, 0.771);
     padding: 15px;
     border-radius: 10px;
     width: 200px;
     transition: transform 0.3s ease;
 }
-
+h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgba(12, 208, 103, 0.855); /* sau #000000 */
+}
 .category img {
     width: 100%;
     height: auto;
@@ -119,12 +173,12 @@ ul li {
 }
 
 .category h3 {
-    color: white;
+    color: rgba(23, 242, 114, 0.923);
     margin-top: 10px;
 }
 
 .category p {
-    color: lightgray;
+    color: rgba(8, 218, 8, 0.982);
     font-size: 14px;
 }
 
@@ -167,7 +221,7 @@ ul li {
 .category img {
     width: 100%;
     border-radius: 10px;
-    transition: transform 0.3s;
+    transition: transform 1.3s;
 }
 
 .category img:hover {
@@ -190,4 +244,342 @@ ul li {
     width: 100%;
     border-radius: 10px;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/oct7.jpg') no-repeat center center/cover;
+    color: rgb(13, 20, 225);
+    text-align: center;
+}
 
+header {
+    background: rgba(125, 121, 121, 0.448);
+    padding: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+.service-card {
+    background: rgba(179, 166, 166, 0.9);
+    color: rgba(23, 23, 24, 0.901);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, 0.3s;
+    box-shadow: 0px 4px 8px rgba(251, 3, 3, 0.963);
+}
+
+.service-card:hover {
+    transform: scale(1.1);
+    background: rgba(255, 165, 0, 0.9);
+    color: white;
+}
+
+.service-card i {
+    font-size: 40px;
+    color: #ff9900;
+}
+
+.appointment {
+    background: rgba(118, 110, 110, 0.795);
+    padding: 20px;
+    margin: 40px auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+input, select, button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 16px;
+}
+
+button {
+    background: #ff9900;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    width: 50%;
+    border: none;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #e68a00;
+}
+#about {
+    padding: 90px 0;
+    background-color: #7312eae9;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 350px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1 1 300px;
+    margin-right: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-text {
+    flex: 1 1 500px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/porsche cayene.jpg') no-repeat center center/cover;
+    color: rgba(206, 14, 14, 0.812);
+   
+} 
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.skoda-octavia {
+    color: black;
+  }
+  .animated-image {
+    width: 100%; /* Se va întinde pe toată lățimea */
+    max-width: 600px; /* Dimensiunea maximă */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+.animated-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+/* 1. Definim animația keyframes */
+@keyframes zoomIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* 2. Aplicăm animația la imaginile din .category */
+  .category img {
+    animation: zoomIn 1s ease forwards; /* 1s = durata animației, ajustați după preferință */
+    /* Putem seta și un delay dacă vrem să se vadă pe rând */
+    
+    transform-origin: center; 
+  }
+  /* Reset de bază */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/image1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    font-family: Arial, sans-serif;
+    color: rgba(245, 175, 12, 0.904);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: rgba(31, 29, 29, 0.673); 
+}
+
+.logo {
+    color: #ff1e1e;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgba(239, 241, 246, 0.586);
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #ff0000;
+}
+
+/* Responsivitate */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Căutare */
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.search-box input {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 8px;
+    background: #ff1e1e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-box button:hover {
+    background: #c00;
+}
+
+/* Categorii */
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+
+.category {
+    background: rgba(132, 129, 129, 0.81);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0px 4px 6px rgba(239, 30, 2, 0.858);
+}
+
+.category img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.category h3 {
+    color: rgb(184, 187, 186);
+}
+
+.category p {
+    color: rgb(0, 0, 0);
+}
+
+/* Container imagine animată */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; 
+    margin-top: 50px;
+}
+
+/* Imagine animată */
+.animated-image {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    opacity: 100;
+    transform: scale(0.8);
+    animation: fadeInZoom 3.5s ease-out forwards;
+}
+
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.navbar {
+    position: static; /* Or just remove any positioning styles */
+    top: 100;
+    width: 100%;
+    background-color: #333; /* Adjust as needed */
+}
