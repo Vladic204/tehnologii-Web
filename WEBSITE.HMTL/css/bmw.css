@@ -1,0 +1,49 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stiluri specifice categoriei BMW */
+.category#bmw {
+    background: rgba(132, 129, 129, 0.81);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0px 4px 6px rgba(239, 30, 2, 0.858);
+    transition: transform 0.3s ease;
+}
+
+.category#bmw:hover {
+    transform: scale(1.05);
+}
+
+.category#bmw img {
+    width: 100%;
+    border-radius: 10px;
+    animation: zoomIn 1s ease forwards;
+}
+
+.category#bmw h3 {
+    color: rgb(184, 187, 186);
+    margin-top: 10px;
+}
+
+.category#bmw p {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+/* Animație pentru imaginea BMW */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

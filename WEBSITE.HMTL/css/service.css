@@ -1,0 +1,160 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stiluri generale pentru body (opțional, doar dacă e o pagină separată) */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../images/cayene turbo gt.jpg') no-repeat center center/cover;
+    color: rgba(206, 14, 14, 0.812);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Secțiunea Service */
+.service-section {
+    padding: 40px 20px;
+    flex: 1;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Titlu */
+h2 {
+    text-align: center;
+    color: rgb(184, 187, 186);
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+/* Grilă de servicii */
+.service-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.service-card {
+    background: rgba(179, 166, 166, 0.9);
+    color: rgba(23, 23, 24, 0.901);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(251, 3, 3, 0.963);
+}
+
+.service-card:hover {
+    transform: scale(1.1);
+    background: rgba(255, 165, 0, 0.9);
+    color: white;
+}
+
+.service-card i {
+    font-size: 40px;
+    color: #ff9900;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+}
+
+/* Formular de programare */
+.appointment {
+    background: rgba(118, 110, 110, 0.795);
+    padding: 20px;
+    margin: 40px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.appointment h3 {
+    color: rgb(184, 187, 186);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.appointment form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.appointment input,
+.appointment select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: box-shadow 0.3s ease;
+}
+
+.appointment input:focus,
+.appointment select:focus {
+    box-shadow: 0 0 5px rgba(255, 30, 30, 0.5);
+    outline: none;
+}
+
+.appointment button {
+    padding: 10px;
+    background: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.appointment button:hover {
+    background: #e68a00;
+    transform: scale(1.05);
+}
+
+.appointment button:active {
+    transform: scale(0.95);
+}
+
+/* Responsivitate */
+@media (max-width: 768px) {
+    .service-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .appointment {
+        width: 90%;
+    }
+
+    .appointment input,
+    .appointment select {
+        width: 100%;
+    }
+
+    .appointment button {
+        width: 70%;
+    }
+}

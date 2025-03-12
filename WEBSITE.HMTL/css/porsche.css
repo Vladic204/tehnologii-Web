@@ -1,0 +1,72 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Stiluri specifice categoriei Porsche */
+.category#porsche {
+    background: rgba(132, 129, 129, 0.81);
+    padding: 20px; /* Mai mult padding pentru un aspect aerisit */
+    border-radius: 12px;
+    text-align: center;
+    width: 280px; /* Ajustare lățime pentru aliniere mai bună */
+    box-shadow: 0px 5px 10px rgba(239, 30, 2, 0.85);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Efect la hover */
+.category#porsche:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(239, 30, 2, 1);
+}
+
+/* Stiluri pentru imagine */
+.category#porsche img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efect hover pe imagine */
+.category#porsche img:hover {
+    transform: scale(1.1);
+}
+
+/* Stiluri pentru text */
+.category#porsche h3 {
+    color: rgb(184, 187, 186);
+    margin-top: 10px;
+    font-size: 20px; /* Font mai mare pentru vizibilitate */
+    font-weight: bold;
+}
+
+.category#porsche p {
+    color: rgb(0, 0, 0);
+    font-size: 15px; /* Ușor mai mare pentru lizibilitate */
+    margin-top: 5px;
+}
+
+/* Animație pentru apariție */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsivitate */
+@media (max-width: 768px) {
+    .category#porsche {
+        width: 90%; /* Lățime adaptabilă pe ecrane mici */
+    }
+}

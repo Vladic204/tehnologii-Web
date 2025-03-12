@@ -1,0 +1,315 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stiluri generale pentru body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: url('../images/cayene turbo gt.jpg') no-repeat center center/cover;
+    color: rgba(206, 14, 14, 0.812);
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    height: 75px;
+    margin: auto;
+    padding: 10px 20px;
+    background: rgba(31, 29, 29, 0.673);
+}
+
+.logo {
+    color: #ff1e1e;
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu ul li a {
+    color: rgba(239, 241, 246, 0.586);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #ff0000;
+}
+
+/* Bara de căutare */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#search-input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+#search-button {
+    padding: 10px 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#search-button:active {
+    transform: scale(0.95);
+}
+
+/* Main section */
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(7, 237, 122, 0.833) 50%, rgba(21, 241, 9, 0.981) 50%), url('car.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Categorii */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px; /* Spațiere între elemente */
+    margin-top: 20px;
+}
+
+.category {
+    background: rgba(234, 231, 231, 0.996); /* Fundal semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.7);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    text-align: center;
+}
+
+.category img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.category h3 {
+    color: white;
+    margin-top: 10px;
+}
+
+.category p {
+    color: lightgray;
+}
+
+.category:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.9);
+}
+
+
+.category img {
+    width: 80%;
+    border-radius: 100px;
+    animation: zoomIn 1s ease forwards;
+}
+
+.category h3 {
+    color: rgb(184, 187, 186);
+    margin-top: 10px;
+}
+
+.category p {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+/* Animație pentru imagini din categorii */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Imagine animată */
+.animated-image {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeInZoom 3.5s ease-out forwards;
+    transition: transform 0.3s ease-in-out;
+}
+
+.animated-image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Animație pentru imaginea animată */
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Servicii */
+.service-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+.service-card {
+    background: rgba(179, 166, 166, 0.9);
+    color: rgba(23, 23, 24, 0.901);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0px 4px 8px rgba(251, 3, 3, 0.963);
+}
+
+.service-card:hover {
+    transform: scale(1.1);
+    background: rgba(255, 165, 0, 0.9);
+    color: white;
+}
+
+.service-card i {
+    font-size: 40px;
+    color: #ff9900;
+}
+
+/* Formular programare */
+.appointment {
+    background: rgba(118, 110, 110, 0.795);
+    padding: 20px;
+    margin: 40px auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+input, select, button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 16px;
+}
+
+button {
+    background: #ff9900;
+    color: white;
+    width: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #e68a00;
+}
+
+/* Responsivitate */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#search-button {
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}

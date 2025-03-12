@@ -1,0 +1,126 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stiluri pentru containerul de căutare */
+.search-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(31, 29, 29, 0.673); /* Fundal semi-transparent similar navbar-ului */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Formular de căutare */
+.search-form {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ff1e1e;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background: #ff1e1e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.search-form button:hover {
+    background: #ff0000;
+}
+
+/* Container pentru rezultatele căutării */
+.search-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Stiluri pentru fiecare rezultat (automobil) */
+.car-result {
+    background: rgba(132, 129, 129, 0.81);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(239, 30, 2, 0.858);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Previne depășirea conținutului */
+}
+
+.car-result:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(239, 30, 2, 0.9);
+}
+
+.car-result img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation: zoomIn 1s ease forwards;
+    object-fit: cover; /* Asigură că imaginea se potrivește bine */
+    display: block; /* Elimină spațiul implicit sub imagine */
+}
+
+.car-result h3 {
+    color: rgb(184, 187, 186);
+    margin: 15px 0 10px;
+    font-size: 20px;
+}
+
+.car-result p {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.car-result .car-details {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Animație pentru imagini */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsivitate */
+@media (max-width: 768px) {
+    .search-results {
+        grid-template-columns: 1fr; /* Un singur rezultat pe rând pe ecrane mici */
+    }
+
+    .search-form input[type="text"] {
+        width: 200px;
+    }
+
+    .car-result {
+        width: 100%;
+    }
+}
