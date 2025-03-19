@@ -1,0 +1,36 @@
+[
+    {
+        "username": "sadasd",
+        "email": "vladislavburlea09@gmail.com",
+        "password": "$2y$12$syQeINIssMJhsKbQBrMfoOyskJajvT3MaqwdouCtSVPIROKeE11AG"
+    },
+    {
+        "username": "sadasdsdada",
+        "email": "vladislavburlea019@gmail.com",
+        "password": "$2y$12$HiLLNtka55AdLT\/x5MURgeD5oVyX6zEqQS8mIEF6LbPNTUwW27Uqm"
+    },
+    {
+        "username": "sadasdsad",
+        "email": "vladislavburlea029@gmail.com",
+        "password": "$2y$12$ZYxK\/2SohmROvpuVehYqTOIX39B6NLQ2pMMx\/LLKkY7ZGtAVQNnAW",
+        "token": "e43b52e3da91096860421bd1062a4736"
+    },
+    {
+        "username": "12345",
+        "email": "vladislavburlea091@gmail.com",
+        "password": "$2y$12$18ZE79YLYTpDuofntgASteW1c7U1CuQBye4zN0HYOJmyzQakPGB5K",
+        "token": "b3fe7e3a33a0cf623dc3da5def46c86e"
+    },
+    {
+        "username": "misa",
+        "email": "vladislavburlea239@gmail.com",
+        "password": "$2y$12$UKmso3lYqS3iex3IcmGdHOof0U.aWZQrUSR6v3PlEzgxi5OQZCWcm",
+        "token": "71b3df4f72a83b976576cec5927e9832"
+    },
+    {
+        "username": "max",
+        "email": "maxburlea0319@gmail.com",
+        "password": "$2y$12$V8NOwvrKRNHOSnAzKxYPMuAkRv7ySsOjiiNFnpDk5HzVtqPUh4JVy",
+        "token": "ee017b629e18371abc77cccfb7cc875e"
+    }
+]

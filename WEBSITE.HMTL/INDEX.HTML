@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpage Design</title>
-    <script src="app.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,63 +15,376 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="categories.html">CATEGORIES</a></li>  
+                <li><a href="categories.html">CATEGORIES</a></li>
                 <li><a href="service.html">SERVICE</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
-        <!-- Bara de căutare -->
         <div class="search-bar">
             <input type="text" placeholder="Caută..." id="search-input">
             <button id="search-button">Caută</button>
         </div>
     </div>
 
-    <!-- Categorii -->
-    <div class="categories">
-        <div class="category" id="skoda">
-            <img src="images/octvv7.jpg" alt="Skoda">
-            <h3>Skoda Octavia a7</h3>
-            <p>Mașini economice și fiabile, perfecte pentru oraș și drum lung.</p>
+    <div class="auth-buttons">
+        <a href="login.php" class="btn">Logare</a>
+        <a href="register.php" class="btn">Înregistrare</a>
+    </div>
+    <div class="logout-button" style="display: none;">
+        <button id="logout-btn" class="btn">Deconectare</button>
+    </div>
+
+    <div class="main-content">
+        <h1 class="title">Primii din Moldova🌏</h1>
+    
+        <div class="categories">
+            <div class="category" id="skoda">
+                <div class="image-container">
+                    <img src="images/octvv7.jpg" alt="Skoda">
+                </div>
+                <div class="brand-info">
+                    <h3>Skoda</h3>
+                    <p>Mașini economice și fiabile, perfecte pentru oraș și drum lung.</p>
+                </div>
+            </div>
+            <div class="category" id="porsche">
+                <div class="image-container">
+                    <img src="images/porsche cayene.jpg" alt="Porsche">
+                </div>
+                <div class="brand-info">
+                    <h3>Porsche</h3>
+                    <p>Performanță de top și design sportiv pentru pasionații de viteză.</p>
+                </div>
+            </div>
+            <div class="category" id="bmw">
+                <div class="image-container">
+                    <img src="images/m5.jpg" alt="BMW">
+                </div>
+                <div class="brand-info">
+                    <h3>BMW</h3>
+                    <p>Lux, tehnologie avansată și plăcerea de a conduce la superlativ.</p>
+                </div>
+            </div>
+            <div class="category" id="bentley">
+                <div class="image-container">
+                    <img src="images/bentley.jpg" alt="Bentley">
+                </div>
+                <div class="brand-info">
+                    <h3>Bentley</h3>
+                    <p>Eleganță supremă și putere, un simbol al rafinamentului auto.</p>
+                </div>
+            </div>
+            <div class="category" id="ferrari">
+                <div class="image-container">
+                    <img src="images/12fer.jpg" alt="Ferrari">
+                </div>
+                <div class="brand-info">
+                    <h3>Ferrari</h3>
+                    <p>Mașini perfecte pentru oraș și drum lung.</p>
+                </div>
+            </div>
+            <div class="category" id="jaguar">
+                <div class="image-container">
+                    <img src="images/jaag2.jpg" alt="Jaguar">
+                </div>
+                <div class="brand-info">
+                    <h3>Jaguar</h3>
+                    <p>Performanță de top și design sportiv pentru pasionații de viteză.</p>
+                </div>
+            </div>
+            <div class="category" id="rolls">
+                <div class="image-container">
+                    <img src="images/rolls.jpg" alt="Rolls">
+                </div>
+                <div class="brand-info">
+                    <h3>Rolls Royce</h3>
+                    <p>Lux, tehnologie avansată și plăcerea de a conduce la superlativ.</p>
+                </div>
+            </div>
+            <div class="category" id="lamborghini">
+                <div class="image-container">
+                    <img src="images/urus.jpg" alt="Urus">
+                </div>
+                <div class="brand-info">
+                    <h3>Lamborghini</h3>
+                    <p>Eleganță supremă și putere, un simbol al rafinamentului auto.</p>
+                </div>
+            </div>
         </div>
-        <div class="category" id="porsche">
-            <img src="images/porsche cayene.jpg" alt="Porsche">
-            <h3>Porsche Cayenne</h3>
-            <p>Performanță de top și design sportiv pentru pasionații de viteză.</p>
+
+        <div class="no-results" style="display: none;">
+            <p>Nu s-au găsit rezultate pentru căutarea ta.</p>
         </div>
-        <div class="category" id="bmw">
-            <img src="images/m5.jpg" alt="BMW">
-            <h3>BMW M5</h3>
-            <p>Lux, tehnologie avansată și plăcerea de a conduce la superlativ.</p>
-        </div>
-        <div class="category" id="bentley">
-            <img src="images/bentley.jpg" alt="Bentley">
-            <h3>Bentley Bentayga</h3>
-            <p>Eleganță supremă și putere, un simbol al rafinamentului auto.</p>
+
+        <div class="services">
+            <h2>Service va Ofera</h2>
+            <div class="service-items">
+                <div class="service-item">
+                    <img src="images/sauto_new_logo_black.png" alt="Sales">
+                    <p>Masini Noi</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/vag.jpg" alt="Service">
+                    <p>Diagnostica si Reparatie</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/Nef2.jpeg" alt="Dealership">
+                    <p>Salonul</p>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- Alte categorii -->
-    <div class="categories">
-        <div class="category" id="ferrari">
-            <img src="images/12fer.jpg" alt="Ferrari">
-            <h3>Ferrari</h3>
-            <p>Mașini perfecte pentru oraș și drum lung.</p>
-        </div>
-        <div class="category" id="jaguar">
-            <img src="images/jaag2.jpg" alt="Jaguar">
-            <h3>Jaguar</h3>
-            <p>Performanță de top și design sportiv pentru pasionații de viteză.</p>
-        </div>
-        <div class="category" id="rolls">
-            <img src="images/rolls.jpg" alt="Rolls">
-            <h3>Rolls Royce</h3>
-            <p>Lux, tehnologie avansată și plăcerea de a conduce la superlativ.</p>
-        </div>
-        <div class="category" id="lamborghini">
-            <img src="images/urus.jpg" alt="Urus">
-            <h3>Lamborghini Urus</h3>
-            <p>Eleganță supremă și putere, un simbol al rafinamentului auto.</p>
-        </div>
-    </div>
+
+    <style>
+        .main-content {
+            text-align: center;
+            padding: 40px;
+        }
+        .title {
+            font-size: 2.1em;
+            color: #fbf6f6;
+            margin-bottom: 5px;
+    
+        }
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 400px;
+        }
+        .category {
+            width: 200px;
+            height: 300px;
+            background: #cfc4c4;
+            color: white;
+            border-radius: 40px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            transition: transform 0.3s, width 0.3s, height 0.3s;
+        }
+        /* Style for search results */
+        .category.search-result {
+            width: 300px; /* Larger width for search results */
+            height: 400px; /* Larger height for search results */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+        .image-container {
+            width: 100%;
+            height: 70%; /* Default image height */
+            position: relative;
+        }
+        .category.search-result .image-container {
+            height: 80%; /* More space for image in search results */
+        }
+        .category img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 40px 40px 0 0;
+        }
+        .brand-info {
+            width: 100%;
+            height: 30%; /* Default text section height */
+            background: #333;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .category.search-result .brand-info {
+            height: 20%; /* Less space for text in search results */
+            background: linear-gradient(180deg, #333, #1a1a1a); /* Gradient for a sleek look */
+        }
+        .brand-info h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #d3d2e7;
+            font-weight: bold;
+        }
+        .category.search-result .brand-info h3 {
+            font-size: 1.5em; /* Larger title for search results */
+        }
+        .brand-info p {
+            margin: 5px 0 0;
+            font-size: 0.8em;
+            color: #db0909;
+        }
+        .category.search-result .brand-info p {
+            font-size: 1em; /* Slightly larger description for search results */
+        }
+        .no-results {
+            text-align: center;
+            margin: 20px 0;
+            color: #ccc1c1;
+            font-size: 1.2em;
+        }
+        .services {
+            margin-top: 40px;
+        }
+        .services h2 {
+            font-size: 2em;
+            color: #d8cfcf;
+            margin-bottom: 20px;
+        }
+        .service-items {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service-item {
+            width: 200px;
+            text-align: center;
+        }
+        .service-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .service-item p {
+            margin: 10px 0 0;
+            font-size: 1em;
+            color: #d4cece;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .search-bar input {
+            padding: 8px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+        }
+        .search-bar button {
+            padding: 8px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .search-bar button:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+        /* Auth and button styles */
+        .auth-buttons, .logout-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            padding: 8px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+    <script>
+        // Search functionality
+        const searchInput = document.getElementById('search-input');
+        const searchButton = document.getElementById('search-button');
+        const categories = document.querySelectorAll('.category');
+        const noResults = document.querySelector('.no-results');
+
+        function performSearch() {
+            const searchTerm = searchInput.value.trim().toLowerCase();
+            let hasResults = false;
+
+            // Reset all categories to default state
+            categories.forEach(category => {
+                category.classList.add('hidden');
+                category.classList.remove('search-result'); // Remove search result styling
+            });
+
+            // Hide "no results" message initially
+            noResults.style.display = 'none';
+
+            // If search term is empty, show all categories in default state
+            if (!searchTerm) {
+                categories.forEach(category => {
+                    category.classList.remove('hidden');
+                });
+                return;
+            }
+
+            // Filter categories based on search term
+            categories.forEach(category => {
+                const brandName = category.querySelector('h3').textContent.toLowerCase();
+                if (brandName.includes(searchTerm)) {
+                    category.classList.remove('hidden');
+                    category.classList.add('search-result'); // Apply search result styling
+                    hasResults = true;
+                }
+            });
+
+            // Show "no results" message if no matches found
+            if (!hasResults) {
+                noResults.style.display = 'block';
+            }
+        }
+
+        // Trigger search on button click
+        searchButton.addEventListener('click', performSearch);
+
+        // Trigger search on Enter key press
+        searchInput.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        // Auth functionality (unchanged)
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        const tokenFromUrl = getQueryParam('token');
+        if (tokenFromUrl) {
+            localStorage.setItem('authToken', tokenFromUrl);
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+
+        const token = localStorage.getItem('authToken');
+        const authButtons = document.querySelector('.auth-buttons');
+        const logoutButton = document.querySelector('.logout-button');
+
+        if (token) {
+            authButtons.classList.add('hidden');
+            logoutButton.style.display = 'flex';
+        } else {
+            authButtons.classList.remove('hidden');
+            logoutButton.style.display = 'none';
+        }
+
+        const logoutBtn = document.getElementById('logout-btn');
+        if (logoutBtn) {
+            logoutBtn.addEventListener('click', function() {
+                localStorage.removeItem('authToken');
+                window.location.reload();
+            });
+        }
+    </script>
 </body>
 </html>

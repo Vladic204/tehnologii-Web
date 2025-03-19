@@ -9,6 +9,7 @@
 /* Stiluri pentru containerul de categorii */
 .categories {
     display: flex;
+    background-image: url('/images/octvv7.jpg');
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;

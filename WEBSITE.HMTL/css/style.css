@@ -9,7 +9,7 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Fixed typo: 10vh to 100vh to ensure full viewport height */
     font-family: Arial, sans-serif;
     background: url('../images/cayene turbo gt.jpg') no-repeat center center/cover;
     color: rgba(206, 14, 14, 0.812);
@@ -58,15 +58,43 @@ body {
 .search-bar {
     display: flex;
     align-items: center;
-    margin-left: auto;
+    gap: 5px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.auth-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.auth-button:hover {
+    background-color: #0056b3;
+}
+
+.register {
+    background-color: #28a745;
+}
+
+.register:hover {
+    background-color: #218838;
 }
 
 #search-input {
-    padding: 10px;
-    width: 200px;
+    padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
+    border-radius: 5px;
+    width: 200px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -77,13 +105,12 @@ body {
 }
 
 #search-button {
-    padding: 10px 16px;
+    padding: 8px 12px;
     background-color: #007BFF;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -118,48 +145,52 @@ body {
 }
 
 .category {
-    background: rgba(234, 231, 231, 0.996); /* Fundal semi-transparent */
-    padding: 20px;
-    border-radius: 10px;
+    position: relative; /* Position relative to allow absolute positioning of .brand-info */
+    width: 200px; /* Adjusted width to match typical category box size */
+    height: 300px; /* Adjusted height */
+    background: rgba(116, 103, 103, 0.996); /* Fundal semi-transparent */
+    border-radius: 100px;
     box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.7);
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     text-align: center;
+    overflow: hidden; /* Ensure content doesn't overflow */
 }
 
 .category img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.category h3 {
-    color: white;
-    margin-top: 10px;
-}
-
-.category p {
-    color: lightgray;
-}
-
-.category:hover {
-    transform: scale(1.05);
-    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.9);
-}
-
-
-.category img {
-    width: 80%;
-    border-radius: 100px;
+    width: 100%; /* Image spans the full width of the box */
+    height: 100%; /* Image spans the full height of the box */
+    object-fit: cover; /* Ensure the image covers the box without distortion */
+    border-radius: 100px; /* Match the border-radius of the category box */
     animation: zoomIn 1s ease forwards;
+}
+
+.brand-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    padding: 10px;
+    text-align: center;
+    color: white;
 }
 
 .category h3 {
     color: rgb(184, 187, 186);
-    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
 }
 
 .category p {
-    color: rgb(0, 0, 0);
-    font-size: 14px;
+    color: rgb(221, 19, 19);
+    font-size: 0.9em;
+    margin: 5px 0 0; /* Small margin to separate from the title */
+}
+
+.category:hover {
+    transform: scale(1.05);
+    box-shadow: 15px 20px 30px rgba(215, 5, 5, 0.9);
 }
 
 /* Animație pentru imagini din categorii */
@@ -287,29 +318,4 @@ button:hover {
     .menu ul li {
         margin: 10px 0;
     }
-}
-.search-bar {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-#search-input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 200px;
-}
-
-#search-button {
-    padding: 8px 12px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#search-button:hover {
-    background-color: #0056b3;
 }
