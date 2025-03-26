@@ -32,5 +32,53 @@
         "email": "maxburlea0319@gmail.com",
         "password": "$2y$12$V8NOwvrKRNHOSnAzKxYPMuAkRv7ySsOjiiNFnpDk5HzVtqPUh4JVy",
         "token": "ee017b629e18371abc77cccfb7cc875e"
+    },
+    {
+        "username": "maxim",
+        "email": "vladislav124burlea09@gmail.com",
+        "password": "$2y$12$3UPGkGhJWku77yx2HenXKONBly3tuZ2PeMz67KGX.ujunfAsqUSby",
+        "token": "22a4ab0290453a35d0b7c407c023bef6"
+    },
+    {
+        "username": "ilie",
+        "email": "max31burlea0319@gmail.com",
+        "password": "$2y$12$IuMXKeIeKIg9VeIMIDbl3u.aGwtKDBdoJA8a4Vt9bHhvFQ87.FHlK",
+        "token": "0f4f276b52501c020f6f4db68440c65c"
+    },
+    {
+        "username": "viorel",
+        "email": "vladaavburlea09@gmail.com",
+        "password": "$2y$12$o3xN3dk6JbyMM3blanyo0uESDezEGqM.kQ3VPhfCLHfEzS9nWnGvm",
+        "token": "49b9a13000f83e06b6d66a901383aa09"
+    },
+    {
+        "username": "vladislavv",
+        "email": "maburlea0319@gmail.com",
+        "password": "$2y$12$2yyubTghHgLEaoQsz9oGA.WBl8JHCnJIul2lZUPaA4GUcLdnguLNm",
+        "token": "125ec6fca405e441adcaad983d7e1415"
+    },
+    {
+        "username": "mario",
+        "email": "mariosavburlea09@gmail.com",
+        "password": "$2y$12$0sxgNDz8UgPkRPLNphAQPe5FqsOk7WM\/Mo85HAQrad09wuwI1wxMq",
+        "token": "1392b2baf4d0bea93c4e496943b15fda"
+    },
+    {
+        "username": "alex",
+        "email": "cristivburlea09@gmail.com",
+        "password": "$2y$12$EKl7\/FQpW0gmPHKkK20uQeZ2Gh34JpeNLmOHpVI0F0Rvxd\/FsZ0Bq",
+        "token": "01074a70e9700431e38a6499119bd0ec"
+    },
+    {
+        "username": "sorin",
+        "email": "alexv.burlea@iis.utm.md",
+        "password": "$2y$12$ASWq9js6kqUFoycS\/507yuO21DMqGzIW5.RGo5.5GkC5.PUW6HR26",
+        "token": "9db7c3bc0de7e5a7cb74d817d3b74d9a"
+    },
+    {
+        "username": "adasdsa",
+        "email": "vladislaasdavburlea09@gmail.com",
+        "password": "$2y$12$r5hSZHvyxJZWw1QUroQAFOD5eUJOFl0iXFBMDC3T6odLeIa3QzJBS",
+        "token": "26b3b8581f30d58d18bcd4c08da0f4de"
     }
 ]

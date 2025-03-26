@@ -30,7 +30,7 @@
     
     <footer>
         <nav>
-            <a href="index.html">Înapoi la Categorii</a>
+            <a href="index.php">Înapoi la Categorii</a>
         </nav>
     </footer>
 </body>
